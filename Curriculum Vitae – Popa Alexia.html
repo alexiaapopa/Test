@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae – Popa Alexia Larisa</title>
+    <style>
+        /* Stiluri pentru a imita vizual formatul Europass/CV */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0 auto;
+            max-width: 900px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .cv-document {
+            background-color: #fff;
+            padding: 30px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            background-color: #003399; /* Albastru Europass */
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+        h2 {
+            border-bottom: 2px solid #003399;
+            color: #003399;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            font-size: 1.2em;
+        }
+        /* Secțiunea de date personale (stânga/dreapta) */
+        .personal-data {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .personal-details {
+            flex-grow: 1;
+        }
+        .profile-picture {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ccc;
+            margin-left: 20px;
+        }
+        .data-item {
+            margin-bottom: 5px;
+        }
+        .data-item strong {
+            display: inline-block;
+            width: 100px; /* Aliniază etichetele */
+            color: #555;
+        }
+
+        /* Stiluri pentru liste cronologice */
+        .timeline-item {
+            border-left: 3px solid #ccc;
+            padding-left: 20px;
+            margin-left: 10px;
+            padding-bottom: 15px;
+        }
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+        .period {
+            font-weight: bold;
+            color: #003399;
+            margin-bottom: 5px;
+        }
+        .role, .specialization {
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+        .employer, .institution {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .responsibilities, .skills-list {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 0;
+            font-size: 0.95em;
+        }
+        .competence-category {
+            margin-bottom: 15px;
+        }
+        .competence-category h3 {
+            color: #003399;
+            font-size: 1em;
+            margin-bottom: 5px;
+        }
+        .competence-category ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-document">
+
+        <h1>CURRICULUM VITAE</h1>
+
+        <h2>DATE PERSONALE</h2>
+        <section class="personal-data">
+            <div class="personal-details">
+                <div class="data-item"><strong>Nume complet:</strong> Popa Alexia Larisa</div>
+                <div class="data-item"><strong>Adresă:</strong> Str. Preciziei, Nr. 24, București, România</div>
+                <div class="data-item"><strong>Telefon:</strong> +40 769 025 240</div>
+                <div class="data-item"><strong>Email:</strong> popaalexia157@gmail.com</div>
+            </div>
+            <img src="pozaCV.jpeg" alt="Fotografie de profil" class="profile-picture">
+        </section>
+
+        <h2>EXPERIENȚĂ PROFESIONALĂ</h2>
+        <section id="experienta-profesionala">
+            
+            <div class="timeline-item">
+                <div class="period">Ianuarie 2023 – Prezent</div>
+                <div class="role">Trainer in tehnologia informatiei</div>
+                <div class="employer">ROBBO School, București</div>
+                <p>Principalele responsabilități:</p>
+                <ul class="responsibilities">
+                    <li>Throughout this experience, I conducted lessons and led projects in fields such as robotics,
+                     3D modeling, and programming, always adapting the level of complexity to match the participants’ prior knowledge and experience.</li> 
+                </ul>
+            </div>
+
+        </section>
+
+        <h2>EDUCAȚIE ȘI FORMARE</h2>
+        <section id="educatie-formare">
+            
+            <div class="timeline-item">
+                <div class="period">Octombrie 2023 – Iulie 2027</div>
+                <div class="role">Licență</div>
+                <div class="institution">Universitatea Politehnica București</div>
+                <div class="specialization">Specializare: Informatica Industriala (IT)</div>
+                <p>Titlul obținut: Inginer</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="period">Septembrie 2019 – Iunie 2023</div>
+                <div class="role">Bacalaureat</div>
+                <div class="institution">Colegiul Național "Alexandru Odobescu", Pitesti</div>
+                <div class="specialization">Profil: Matematică-Informatică, Intensiv Informatica</div>
+            </div>
+
+        </section>
+
+        <h2>COMPETENȚE PERSONALE</h2>
+        <section id="competente-personale">
+            
+            <div class="competence-category">
+                <h3>Limbi străine cunoscute</h3>
+                <ul>
+                    <li><strong>Engleză:</strong> Avansat (scris, citit, vorbit)</li>
+                    <li><strong>Franceză:</strong> Mediu (scris, citit, vorbit)</li>
+                </ul>
+            </div>
+
+            <div class="competence-category">
+                <h3>Competențe digitale</h3>
+                <ul class="skills-list">
+                    <li><strong>Programe Office:</strong> Microsoft Word, Excel, PowerPoint (Nivel Avansat)</li>
+                    <li><strong>Limbaje Web:</strong> HTML5, CSS3, JavaScript (Nivel Mediu)</li>
+                    <li><strong>Altele:</strong> Sisteme de operare Windows/Linux, Baze de date MySQL.</li>
+                </ul>
+            </div>
+
+            <div class="competence-category">
+                <h3>Alte competențe</h3>
+                <ul class="skills-list">
+                    <li><strong>Comunicare:</strong> Abilități excelente de prezentare, dobândite în timpul proiectelor universitare.</li>
+                    <li><strong>Lucru în echipă:</strong> Experiență în echipe multidisciplinare (3 ani în retail și 2 ani în IT).</li>
+                    <li><strong>Organizare:</strong> Capacitate demonstrată de prioritizare și respectare a termenelor limită.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <h2>INFORMAȚII SUPLIMENTARE</h2>
+        <section id="informatii-suplimentare">
+            <ul class="skills-list">
+                
+                <li><strong>Recomandări:</strong> Disponibile la cerere.</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>

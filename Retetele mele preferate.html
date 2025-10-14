@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rețetele Mele Preferate</title>
+    <style>
+        /* Stiluri simple pentru aspect vizual */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header, section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #a0522d; /* Culoare de accent, ca un maro de ciocolată */
+        }
+        .recipe-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .recipe-card {
+            flex: 1 1 calc(33.333% - 40px); /* 3 coloane pe desktop */
+            min-width: 280px; /* Asigură lizibilitatea pe ecrane mai mici */
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+        .recipe-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .newsletter-form label, .newsletter-form input, .newsletter-form button {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .newsletter-form input[type="text"], .newsletter-form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .newsletter-form button {
+            background-color: #a0522d;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .newsletter-form button:hover {
+            background-color: #8b4513;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Rețetele Mele Preferate</h1>
+        <p>Bine ați venit în colecția mea de rețete alese! Aici veți găsi preparate delicioase și ușor de făcut, perfecte pentru orice ocazie. Vă invit să explorați rețetele de mai jos.</p>
+        <p><strong>Dacă doriți să primiți rețete noi direct în inbox, nu uitați să vă abonați la newsletter-ul nostru!</strong></p>
+    </header>
+
+    <section id="retete">
+        <h2>Rețete</h2>
+        <div class="recipe-container">
+
+            <article class="recipe-card">
+                <h3>Spaghete Carbonara Autentică</h3>
+                <img src="https://via.placeholder.com/400x250?text=Carbonara" alt="O farfurie de Spaghete Carbonara delicioase">
+                <p>Clasica rețetă italiană, cremoasă și plină de savoare. Pregătită corect, fără smântână!</p>
+                <a href="https://www.reteteitalian.ro/carbonara-completa" target="_blank">Vezi Rețeta Completă</a>
+            </article>
+
+            <article class="recipe-card">
+                <h3>Supă Cremă de Roșii cu Busuioc</h3>
+                <img src="https://via.placeholder.com/400x250?text=Supa+de+Rosii" alt="Supă cremă de roșii cu frunze de busuioc">
+                <p>Perfectă pentru zilele reci, această supă cremoasă este reconfortantă și plină de vitamine.</p>
+                <a href="https://www.gustos.ro/supa-crema-rosii-busuioc" target="_blank">Vezi Rețeta Completă</a>
+            </article>
+
+            <article class="recipe-card">
+                <h3>Cheesecake Fără Coacere</h3>
+                <img src="https://via.placeholder.com/400x250?text=Cheesecake" alt="O felie de cheesecake cu topping de fructe de pădure">
+                <p>Un desert răcoritor și ușor de preparat, ideal pentru vară. Nu necesită cuptor!</p>
+                <a href="https://www.deserturiusoare.ro/cheesecake-fara-coacere" target="_blank">Vezi Rețeta Completă</a>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <h2>Abonare la Newsletter</h2>
+        <p>Fii primul care primește cele mai noi rețete și sfaturi culinare direct pe email.</p>
+        <form class="newsletter-form" action="#" method="POST">
+            <div>
+                <label for="nume">Nume:</label>
+                <input type="text" id="nume" name="nume" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit">Mă Abonez</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rețetele Mele Preferate. Toate drepturile rezervate.</p>
+    </footer>
+
+</body>
+</html>
