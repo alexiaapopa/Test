@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Căutare Zboruri | [Nume Proiect]</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Acasă</a>
+            <a href="utilizatori/login.html">Login Admin</a>
+        </nav>
+        <h1>Găsește Zborul Perfect</h1>
+    </header>
+
+    <section id="search-form">
+        <h2>Căută Zboruri Disponibile</h2>
+        <form>
+            <label for="plecare">Aeroport Plecare:</label>
+            <input type="text" id="plecare" name="plecare" placeholder="București (OTP)" required>
+            
+            <label for="sosire">Aeroport Sosire:</label>
+            <input type="text" id="sosire" name="sosire" placeholder="Paris (CDG)" required>
+            
+            <label for="data">Data Plecării:</label>
+            <input type="date" id="data" name="data" required>
+            
+            <button type="submit">Caută Zboruri</button>
+        </form>
+    </section>
+
+    <section id="search-results">
+        <h2>Rezultate Zboruri</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Cod Zbor</th>
+                    <th>Plecare</th>
+                    <th>Sosire</th>
+                    <th>Dată/Oră</th>
+                    <th>Preț Min.</th>
+                    <th>Acțiune</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ZB001</td>
+                    <td>OTP</td>
+                    <td>CDG</td>
+                    <td>2025-11-20 10:00</td>
+                    <td>99.99 EUR</td>
+                    <td><a href="ticketing/cumpara_bilet.html?zbor=ZB001" class="btn">Rezervă</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>&copy; 2025 [Nume Proiect]</footer>
+</body>
+</html>
